@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub免费论坛</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fab fa-github"></i>
+                <span>GitHub论坛</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="#">分类</a>
+                <a href="#">关于</a>
+                <button id="newPostBtn" class="btn-primary">
+                    <i class="fas fa-plus"></i> 发帖
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>基于GitHub的免费论坛</h1>
+            <p>无需服务器，无需数据库，完全免费</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="forum-header">
+            <h2>最新讨论</h2>
+            <div class="filters">
+                <select id="categoryFilter">
+                    <option value="all">所有分类</option>
+                    <option value="tech">技术讨论</option>
+                    <option value="help">问题求助</option>
+                    <option value="project">项目协作</option>
+                    <option value="announce">社区公告</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="newest">最新</option>
+                    <option value="popular">最热</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="postsContainer" class="posts-container">
+            <div class="loader">
+                <div class="spinner"></div>
+                <p>正在加载讨论内容...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 GitHub免费论坛 | 基于GitHub Pages和Discussions构建</p>
+            <p>注意：所有数据存储在GitHub Discussions中，需要GitHub账号才能发帖</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

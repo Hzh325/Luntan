@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帖子详情 - GitHub免费论坛</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fab fa-github"></i>
+                <span>GitHub论坛</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="#">返回</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container post-container">
+        <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <i class="fas fa-chevron-right"></i>
+            <span id="postCategoryBreadcrumb">讨论详情</span>
+        </div>
+        
+        <article class="post-content">
+            <h1 id="postTitle">正在加载帖子内容...</h1>
+            
+            <div class="post-meta">
+                <div class="author-info">
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <span id="postAuthor">作者</span>
+                        <span id="postDate">日期</span>
+                    </div>
+                </div>
+                <div class="post-stats">
+                    <span>
+                        <i class="far fa-eye"></i>
+                        <span id="viewCount">0</span> 次查看
+                    </span>
+                    <span>
+                        <i class="far fa-comment"></i>
+                        <span id="commentCount">0</span> 条评论
+                    </span>
+                </div>
+            </div>
+            
+            <div id="postBody" class="post-body">
+                <div class="loader">
+                    <div class="spinner"></div>
+                    <p>正在加载帖子内容...</p>
+                </div>
+            </div>
+            
+            <div class="post-actions">
+                <button class="btn-outline">
+                    <i class="far fa-thumbs-up"></i> 点赞
+                </button>
+                <button class="btn-outline">
+                    <i class="far fa-bookmark"></i> 收藏
+                </button>
+            </div>
+        </article>
+        
+        <section class="comments-section">
+            <h2>评论</h2>
+            <div id="commentsContainer">
+                <p>评论加载中...</p>
+            </div>
+            
+            <div class="comment-form">
+                <h3>发表评论</h3>
+                <p class="login-notice">
+                    <i class="fas fa-info-circle"></i> 
+                    需要 <a href="#" id="githubLoginLink">GitHub账号登录</a> 才能发表评论
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 GitHub免费论坛 | 基于GitHub Pages和Discussions构建</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
